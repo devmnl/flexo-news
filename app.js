@@ -20,6 +20,15 @@ const posts = [
     tags: ['Dissídio', 'Reajuste Salarial'],
     link: 'https://sindigraf.org.br/wp-content/uploads/2024/09/SINDIGRAF-SP-INFORMA-007-2024-FECHAMENTO-DETALHADO.pdf'
   },
+    {
+    id: 'p3',
+    type: 'Notícia',
+    title: 'Mercado flexográfico 2025',
+    date: '2025-09-16',
+    excerpt: 'O mercado flexográfico apresentou um crescimento de 1,8% em 2025, em comparação com o ano anterior. Este aumento foi influenciado por diversos fatores, incluindo a recuperação da economia global e o aumento da demanda por produtos flexográficos.',
+    tags: ['Negocios', 'Informações'],
+    link: 'https://www.flexo.com.br/mercado-flexografico-2025'
+  },
   
 ];
 
