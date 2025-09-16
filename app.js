@@ -9,7 +9,7 @@ const posts = [
     date: '2025-09-12',
     excerpt: 'Os salários vigentes em 1° de Setembro de 2024, limitados a R$ 12.675,82 (doze mil seiscentos e setenta e cinco reais e oitenta e dois centavos serão reajustados mediante aplicação do percentual de 5,70% (cinco inteiros e setenta centésimos por cento, a partir de 1º de Setembro de 2025.',
     tags: ['Dissídio', 'Reajuste Salarial'],
-    link: 'https://www.gov.br/pt-br/servicos/reajuste-salarial-2025-para-o-setor-flexografico'
+    link: 'https://sindigraf.org.br/wp-content/uploads/2025/09/SINDIGRAF-SP-INFORMA-005_2025-NEGOCIACOES-COLETIVAS-DE-TRABALHO-2025-FECHAMENTO.pdf'
   },
   
 ];
@@ -23,18 +23,25 @@ function formatDateToPtBr(isoDate) {
 }
 
 function createCard(post) {
-  const tagBadges = (post.tags || []).map(tag => `<span class=\"tag\">${tag}</span>`).join('');
+  const tagBadges = (post.tags || []).map(tag => `<span class="tag">${tag}</span>`).join('');
+  const titleHtml = post.link
+    ? `<a class="link" href="${post.link}" target="_blank" rel="noopener noreferrer">${post.title}</a>`
+    : post.title;
+  const actionLink = post.link
+    ? `<a class="link" href="${post.link}" target="_blank" rel="noopener noreferrer" aria-label="Abrir: ${post.title}">Abrir ↗</a>`
+    : '';
   return `
-    <article class=\"card\" tabindex=\"0\" aria-labelledby=\"title-${post.id}\">
-      <div class=\"card-type\">
-        <span class=\"type-badge\">${post.type}</span>
-        <span class=\"card-meta\">
+    <article class="card" tabindex="0" aria-labelledby="title-${post.id}">
+      <div class="card-type">
+        <span class="type-badge">${post.type}</span>
+        <span class="card-meta">
           <span>${formatDateToPtBr(post.date)}</span>
         </span>
       </div>
-      <h3 id=\"title-${post.id}\">${post.title}</h3>
+      <h3 id="title-${post.id}">${titleHtml}</h3>
       <p>${post.excerpt}</p>
-      <div class=\"tags\">${tagBadges}</div>
+      <div class="tags">${tagBadges}</div>
+      ${actionLink}
     </article>
   `;
 }
