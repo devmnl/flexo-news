@@ -6,10 +6,19 @@ const posts = [
     id: 'p1',
     type: 'Aviso',
     title: 'REAJUSTE SALARIAL 2025 PARA O SETOR FLEXOGRÁFICO',
-    date: '2025-09-12',
+    date: '2025-09-16',
     excerpt: 'Os salários vigentes em 1° de Setembro de 2024, limitados a R$ 12.675,82 (doze mil seiscentos e setenta e cinco reais e oitenta e dois centavos serão reajustados mediante aplicação do percentual de 5,70% (cinco inteiros e setenta centésimos por cento, a partir de 1º de Setembro de 2025.',
     tags: ['Dissídio', 'Reajuste Salarial'],
     link: 'https://sindigraf.org.br/wp-content/uploads/2025/09/SINDIGRAF-SP-INFORMA-005_2025-NEGOCIACOES-COLETIVAS-DE-TRABALHO-2025-FECHAMENTO.pdf'
+  },
+  {
+    id: 'p2',
+    type: 'Aviso',
+    title: 'REAJUSTE SALARIAL 2024 PARA O SETOR FLEXOGRÁFICO',
+    date: '2024-09-16',
+    excerpt: 'Os salários vigentes em 1° de Setembro de 2023, limitados a R$ 11.992,27 (onze mil novecentos e noventa e dois reais evinte e sete centavos), serão reajustados mediante aplicação do percentual de 4,75% (quatro inteiros e setenta e cincocentésimos por cento), a partir de 1º de Setembro de 2024. Para os salários superiores ao valor acima, será adicionada aparcela fixa de R$ 569,63 (quinhentos e sessenta e nove reais e sessenta e três centavos).',
+    tags: ['Dissídio', 'Reajuste Salarial'],
+    link: 'https://sindigraf.org.br/wp-content/uploads/2024/09/SINDIGRAF-SP-INFORMA-007-2024-FECHAMENTO-DETALHADO.pdf'
   },
   
 ];
