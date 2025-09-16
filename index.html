@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flexo News — Avisos & Notícias de Flexografia</title>
+    <meta name="description" content="Avisos e notícias do setor flexográfico em uma página moderna e rápida." />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0b0c" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo" aria-hidden="true">🧠</span>
+          <div class="brand-text">
+            <strong>Flexo News</strong>
+            <span>Avisos & Notícias de Flexografia</span>
+          </div>
+        </div>
+        <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema" aria-pressed="false">
+          <span class="toggle-icon" aria-hidden="true">🌙</span>
+          <span class="toggle-text">Tema</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="site-main" role="main">
+      <div class="container">
+        <section aria-labelledby="avisos-title" class="cards-section">
+          <div class="section-head">
+            <h1 id="avisos-title">Destaques</h1>
+            <p class="section-subtitle">Atualizações recentes do setor flexográfico</p>
+          </div>
+          <div id="cards" class="cards" aria-live="polite"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© <span id="currentYear"></span> Flexo News. Todos os direitos reservados.</p>
+        <p>
+          
+        </p>
+      </div>
+    </footer>
+
+    <noscript>
+      <div class="noscript">
+        Para melhor experiência, ative o JavaScript. Conteúdo estático indisponível.
+      </div>
+    </noscript>
+
+    <script src="app.js" defer></script>
+  </body>
+  </html>
