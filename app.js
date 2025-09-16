@@ -5,7 +5,7 @@ const posts = [
   {
     id: 'p1',
     type: 'Aviso',
-    title: 'Reajuste salarial 2025 para o setor flexográfico.',
+    title: 'REAJUSTE SALARIAL 2025 PARA O SETOR FLEXOGRÁFICO',
     date: '2025-09-12',
     excerpt: 'Os salários vigentes em 1° de Setembro de 2024, limitados a R$ 12.675,82 (doze mil seiscentos e setenta e cinco reais e oitenta e dois centavos serão reajustados mediante aplicação do percentual de 5,70% (cinco inteiros e setenta centésimos por cento, a partir de 1º de Setembro de 2025.',
     tags: ['Dissídio', 'Reajuste Salarial'],
